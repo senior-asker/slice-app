@@ -13,14 +13,9 @@ import Post from './Post/Post'
 //   )
 // }
 
-const MyPosts = () => {
-  
-  let posts = [
-    { id: 1, message: "Hi, what's app man" },
-    { id: 2, message: 'Today is good day bro:)' },
-  ]
+const MyPosts = (props) => {
 
-  let postsElement = posts.map((p) => <Post name={p.message} />)
+  let postsElement = props.posts.map((p) => <Post name={p.message} />)
 
   return (
     <div className={s.postBlock}>
