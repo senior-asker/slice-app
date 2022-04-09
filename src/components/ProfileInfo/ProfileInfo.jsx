@@ -1,13 +1,8 @@
-import s from './ProfileInfo.module.css'
+import './ProfileInfo.module.css'
 
-const ProfileInfo = (props) => {
+const ProfileInfo = () => {
   return (
-    <div>
-      <div>
-        <img alt="" src=""></img>
-      </div>
-      <div className={s.descriptionBlock}>ava + description</div>
-    </div>
+    <div></div>
   )
 }
 
